@@ -14,4 +14,7 @@ router.put("/users/updateJob/:id", userController.updateJob)
 //Delete Job
 router.delete("/users/deleteJob/:id", userController.deleteJob)
 
+//Update User
+router.put("/users/updateUser/:id", userController.updateUser)
+
 module.exports = router
