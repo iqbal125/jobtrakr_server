@@ -7,7 +7,7 @@ CREATE TABLE users (
 
 
 CREATE TABLE jobs (
-  jid SERIAL PRIMARY KEY,
+  id SERIAL PRIMARY KEY,
   position VARCHAR(255),
   company VARCHAR(255),
   status VARCHAR(255),
