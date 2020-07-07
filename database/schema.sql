@@ -12,6 +12,9 @@ CREATE TABLE jobs (
   company VARCHAR(255),
   status VARCHAR(255),
   date_applied VARCHAR(255),
+  last_followup_response VARCHAR(255),
+  last_status_change VARCHAR(255),
+  last_followup VARCHAR(255),
   point_of_contact VARCHAR(255),
   poc_email VARCHAR(255),
   poc_phone VARCHAR(255),
@@ -19,3 +22,4 @@ CREATE TABLE jobs (
   notes VARCHAR,
   user_id INT REFERENCES users(id)
 );
+
