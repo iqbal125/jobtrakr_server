@@ -35,6 +35,10 @@ module.exports = {
     const status = req.body.status ? req.body.status : ""
     const poc_email = req.body.poc_email ? req.body.poc_email : ""
     const poc_phone = req.body.poc_phone ? req.body.poc_phone : ""
+
+    const last_followup_response = req.body.last_followup_response ? req.body.last_followup_response : ""
+    const last_status_change = req.body.last_status_change ? req.body.last_status_change : ""
+    const last_followup = req.body.last_followup ? req.body.last_followup : ""
     const notes = req.body.notes ? req.body.notes : ""
 
     // //Save Job to Database
@@ -48,6 +52,9 @@ module.exports = {
       status,
       poc_email,
       poc_phone,
+      last_followup_response,
+      last_followup,
+      last_status_change,
       notes,
     })
 
@@ -67,6 +74,9 @@ module.exports = {
     const status = req.body.status ? req.body.status : ""
     const poc_email = req.body.poc_email ? req.body.poc_email : ""
     const poc_phone = req.body.poc_phone ? req.body.poc_phone : ""
+    const last_followup_response = req.body.last_followup_response ? req.body.last_followup_response : ""
+    const last_status_change = req.body.last_status_change ? req.body.last_status_change : ""
+    const last_followup = req.body.last_followup ? req.body.last_followup : ""
     const notes = req.body.notes ? req.body.notes : ""
 
     //Update Job for a specific user and job
@@ -81,6 +91,9 @@ module.exports = {
         status,
         poc_email,
         poc_phone,
+        last_followup_response,
+        last_followup,
+        last_status_change,
         notes,
       })
       .where("id", id)

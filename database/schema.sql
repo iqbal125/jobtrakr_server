@@ -14,11 +14,11 @@ CREATE TABLE jobs (
   date_applied VARCHAR(255),
   last_followup_response VARCHAR(255),
   last_status_change VARCHAR(255),
-  last_followup VARCHAR(255),
   point_of_contact VARCHAR(255),
   poc_email VARCHAR(255),
   poc_phone VARCHAR(255),
   location VARCHAR(255),
+  last_followup VARCHAR(255),
   notes VARCHAR,
   user_id INT REFERENCES users(id)
 );
